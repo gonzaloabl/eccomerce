@@ -1,0 +1,24 @@
+# Archivos de entorno
+.env
+*.env
+
+# Dependencias
+node_modules/
+
+# Logs y archivos temporales
+*.log
+*.tmp
+
+# Entornos de desarrollo
+dist/
+build/
+.vscode/
+.DS_Store
+
+# Backend específico
+backend/.env
+backend/node_modules/
+
+# Frontend específico
+frontend/node_modules/
+frontend/dist/
