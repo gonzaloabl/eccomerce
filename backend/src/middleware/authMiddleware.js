@@ -23,9 +23,9 @@ export const protect = async (req, res, next) => {
 
 // Middleware para admin
 export const admin = (req, res, next) => {
-  if (req.user && req.user.role === 'admin') {
+  if (req.user?.role === "admin") { // Usa optional chaining por seguridad
     next();
   } else {
-    res.status(403).json({ message: "⛔ Acceso denegado - Requiere ser admin" });
+    res.status(403).json({ message: "⛔ Acceso denegado: Requiere ser admin" });
   }
 };
